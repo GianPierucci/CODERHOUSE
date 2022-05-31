@@ -1,0 +1,792 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: Arial, Helvetica, sans-serif;
+     background-color: #e9e9e9;
+ }
+ 
+ ul li {
+     list-style: none;
+ }
+
+
+ /*------------VISTA PARA MOBILE--------------*/
+
+ /*         HEADER           */
+ header {
+     background: #CC2936;
+     color: white;
+     width: 100%;
+     height: auto;
+     border-bottom: 1px solid black;
+     position: sticky;
+     top: 0;
+     z-index: 15;
+ }
+
+ header h1 {
+     font-weight: 800;
+     font-size: 35px;
+     padding: 12px;
+ }
+
+
+ .container {
+     width: 98%;
+     margin: 0 1.2vw;
+ }
+
+ .flex-header {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ .subtit {
+     font-size: 1rem;
+     display: none;
+     padding-left: 5px;
+ }
+
+
+
+
+ /*           BARRA DE NAVEGACION            */
+
+ .menu {
+     background: #696867;
+     width: 100%;
+     height: 100vh;
+     border-bottom: 1px solid black;
+     display: none;
+ }
+
+ .menu a:hover {
+     background-color: white;
+ }
+
+ .nav-display {
+     display: block;
+     text-align: center;
+ }
+
+ nav ul li {
+     font-family: "oswald";
+     font-size: 1em;
+     font-weight: 500;
+     padding: 20px 0;
+     border-bottom: 1px solid lightgrey;
+     text-align: center;
+ }
+
+ .nav-icono {
+     background: none;
+     color: white;
+     border: none;
+     font-size: 35px;
+     border-left: 1px solid white;
+ }
+
+ .colorNavs {
+     color: white;
+ }
+
+ .noUnderlined {
+     text-decoration: none;
+ }
+
+ .prod-submenu {
+     position: absolute;
+     background-color: #696867;
+     display: none;
+ }
+
+ .prod-submenu li {
+     padding: 15px;
+     border-bottom: 1px solid whitesmoke;
+ }
+
+
+
+
+ /*            FOOTER             */
+
+ footer {
+     background: #545454;
+     width: 100%;
+     height: auto;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+ }
+
+ .flexinfo {
+     display: flex;
+     flex-flow: column nowrap;
+ }
+
+ footer h2 {
+     color: black;
+     height: auto;
+     font-size: 2rem;
+     margin-left: 20px;
+ }
+
+ .footer-logo {
+     margin: 10px;
+ }
+
+ .ftr-info {
+     width: auto;
+     height: 100%;
+
+ }
+
+ .padding-info {
+     margin: 10px 30px;
+     font-family: "oswald";
+ }
+
+ .icons-info {
+     width: 20px;
+     border-radius: 5px;
+ }
+
+
+ .redes-sociales {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+     margin-right: 5%;
+ }
+
+ .fb {
+     border-radius: 10px;
+ }
+
+ .imgFooter {
+     width: 35px;
+ }
+
+ /*          CONTENIDO PRINCIPAL           */
+
+ .container-main {
+     width: 100%;
+     height: auto;
+     margin-bottom: 35px;
+ }
+
+
+ .container-main div {
+     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url(../imgs/Captura.PNG);
+     background-size: cover;
+     background-position: top 20% right 0;
+     width: 100%;
+     height: 300px;
+
+ }
+
+ #flex-main {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     color: rgb(240, 240, 240);
+ }
+
+ #flex-main span {
+     padding: 10px;
+     font-size: 2.5rem;
+     font-weight: 800;
+     letter-spacing: 3px;
+     display: block;
+     padding: 8px 0;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ #flex-main p {
+     font-size: 19px;
+     background-color: #696867a6;
+     padding: 15px 20px;
+     margin: 0 14px;
+     border-radius: 10px;
+ }
+
+
+
+ /*             SECCION MARCAS             */
+
+ .seccion-marcas {
+     background-color: #b3b3b3;
+     padding-bottom: 8px;
+     margin: 80px 0 20px 0;
+     border-bottom: 2px solid #898989;
+ }
+
+ .texto-demost {
+     background-color: #b3b3b3;
+     text-align: center;
+     padding: 25px 0;
+     margin: 25px 0;
+     font-size: 23px;
+     color: rgb(12, 12, 12);
+     font-weight: 600;
+     border-top: 2px solid rgba(146, 146, 146, 0.836);
+     border-bottom: 1px solid rgba(146, 146, 146, 0.836);
+ }
+
+ .caja1 {
+     background-color: #fce575c0;
+     height: 190px;
+     padding: 25px 0;
+     margin-bottom: 50px;
+     overflow: scroll;
+     overflow-y: hidden;
+     display: flex;
+     border-top: 1px solid rgba(161, 161, 161, 0.692);
+     border-bottom: 1px solid rgba(161, 161, 161, 0.692);
+ }
+
+ .imagen {
+     margin: 0 20px 10px;
+ }
+
+ #texto-marcas {
+     text-align: center;
+     margin-bottom: 50px;
+     padding: 0 4%;
+ }
+
+ #texto-marcas p {
+     padding: 10px;
+     font-family: "oswald";
+     font-size: 20px;
+     background-image: linear-gradient(to left, rgb(20, 20, 20), rgba(204, 0, 0, 0.9));
+     border-radius: 15px;
+     color: white;
+ }
+
+
+
+ /*         SECCION RUBROS         */
+
+ #demostrac2 {
+     background-color: #9b9b9b;
+     width: 100%;
+     text-align: center;
+     padding: 25px 20px;
+     font-size: 23px;
+     font-weight: 600;
+     border-top: 2px solid rgba(113, 113, 113, 0.918);
+     border-bottom: 1px solid rgba(113, 113, 113, 0.916);
+ }
+
+ .seccion-rubros {
+     background-color: #b3b3b3;
+     padding-bottom: 50px;
+     margin: 80px 0;
+     border-bottom: 2px solid rgba(146, 146, 146, 0.836);
+ }
+
+
+ .cajaimg {
+     width: 100%;
+     height: 350px;
+     margin: 70px 0;
+     box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.25);
+ }
+
+
+ #imgMet {
+     background-image: url(../imgs/met.jpg);
+     background-size: cover;
+     display: flex;
+     justify-content: flex-start;
+     align-items: flex-end;
+ }
+
+ .textIzq {
+     color: white;
+     font-size: 25px;
+     padding: 15px 40px;
+     margin-left: 5%;
+     margin-bottom: 4%;
+     font-weight: 600;
+     background-color: #7a6747cc;
+     border: 2px solid #41372967;
+     border-radius: 6px;
+     transition: all 0.5s;
+ }
+
+ .textIzq:hover,
+ .textDerc:hover {
+     padding: 25px 60px;
+ }
+
+
+ #imgCarp {
+     background-image: url(../imgs/dewalt.jpg);
+     background-size: cover;
+     display: flex;
+     justify-content: flex-end;
+     align-items: flex-end;
+
+ }
+
+ .textDerc {
+     color: white;
+     padding: 15px 40px;
+     margin-right: 5%;
+     margin-bottom: 4%;
+     font-size: 25px;
+     font-weight: 600;
+     background-color: #7a6747cc;
+     border: 2px solid #41372967;
+     border-radius: 6px;
+     transition: all 0.5s;
+ }
+
+ #imgCarnic {
+     background-image: url(https://sanluispotosi.quadratin.com.mx/www/wp-content/uploads/2021/10/Carnicero-1160x700.jpg);
+     background-size: cover;
+     display: flex;
+     justify-content: flex-start;
+     align-items: flex-end;
+ }
+
+ .bordear {
+     border: 1px solid black;
+ }
+
+
+ .font {
+     font-family: "oswald";
+ }
+
+ .fontstyle {
+     font-size: 17px;
+ }
+
+
+
+
+
+
+
+
+
+ /*----------MEDIA QUERY TABLET----------*/
+
+ @media screen and (min-width:768px) {
+
+     /* HEADER */
+     header h1 {
+         font-size: 30px;
+     }
+
+     /* FOOTER */
+     footer h2 {
+         color: black;
+         height: auto;
+         font-size: 3rem;
+         margin-left: 20px;
+     }
+
+     .padding-info {
+         font-size: 27px;
+     }
+
+     .icons-info {
+         width: 30px;
+     }
+
+     .fb {
+         border-radius: 10px;
+     }
+
+     .imgFooter {
+         width: 55px;
+     }
+
+     /*-------------- PAGINA INDEX -------------*/
+
+     /* CONT PRINC */
+     .container-main div {
+         height: 450px;
+     }
+
+     #flex-main {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+     }
+
+     #flex-main span {
+         font-size: 3.5rem;
+     }
+
+     #flex-main p {
+         font-size: 25px;
+     }
+
+     /* SECCION MARCAS */
+     .texto-demost {
+         font-size: 40px;
+     }
+
+     .caja1 {
+         height: 290px;
+         padding: 35px 0;
+     }
+
+     /* SECCION RUBROS */
+     #demostrac2 {
+         font-size: 42px;
+     }
+
+     .cajaimg {
+         height: 550px;
+         margin: 70px 0 120px;
+     }
+
+     .textIzq {
+         font-size: 55px;
+     }
+
+     .textDerc {
+         font-size: 55px;
+     }
+
+ }
+
+ /*-------VISTA DESKTOP--------*/
+
+ @media screen and (min-width:1024px) {
+
+     /* GRID */
+     .gridContainer {
+         display: grid;
+         grid-template-columns: 60% 40%;
+         grid-template-rows: auto auto auto auto auto auto;
+         grid-template-areas: "header header"
+             "nav nav"
+             "main main"
+             "seccion-marcas texto-main"
+             "seccion-rubros seccion-rubros"
+             "footer footer";
+     }
+
+     header h1 {
+         font-size: 3vw;
+     }
+
+     /* BARRA DE NAV */
+     .menu {
+         height: auto;
+         display: block;
+         grid-area: nav;
+     }
+
+     .menu a:hover {
+         background-color: rgba(134, 134, 134, 0.509);
+         padding: 10px;
+         color: rgb(30, 30, 30);
+     }
+
+     .nav-display {
+         display: flex;
+         text-align: center;
+         flex-direction: row;
+         justify-content: space-evenly;
+         margin-bottom: 0;
+     }
+
+     nav ul li {
+         font-size: 1.1vw;
+         padding: 10px 0;
+         border: none;
+     }
+
+     .nav-icono {
+         display: none;
+     }
+
+     /*------------------- PAGINA INDEX --------------------------*/
+
+     /* CONTENIDO PRINCIPAL */
+     .container-main div{
+         background-attachment: fixed;
+     }
+     #flex-main p{
+         font-size: 28px;
+         margin: 0 45px;
+     }
+     
+
+     /* SECCION MARCAS */
+     .seccion-marcas {
+         background-image: linear-gradient(to right, #898989, #e9e9e9);
+         border-top: 2px solid #898989;
+         grid-area: seccion-marcas;
+     }
+
+     .texto-demost {
+         background-image: linear-gradient(to right, #898989, #e9e9e9);
+         font-size: 40px;
+         border: none;
+     }
+
+     #texto-marcas {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         text-align: justify;
+         padding: 80px 0;
+         margin: 80px 0 20px 0;
+         border-top: 2px solid #898989;
+         border-bottom: 2px solid #898989;
+     }
+
+     #texto-marcas p {
+         color: black;
+         font-weight: 500;
+         padding: 0 80px;
+         font-family: "oswald";
+         font-size: 35px;
+         background-image: none;
+     }
+
+     .caja1 {
+         background-image: linear-gradient(to right, #898989, #e9e9e9);
+         height: 350px;
+         border: none;
+     }
+
+     /* SECCION RUBROS */
+     .seccion-rubros {
+         grid-area: seccion-rubros;
+     }
+
+     main {
+         grid-area: main;
+     }
+
+     header {
+         grid-area: header;
+
+     }
+
+     footer {
+         grid-area: footer;
+     }
+
+ }
+
+ /*-----------  ESTILOS PAGINA PRODUCTOS  ----------------*/
+
+
+
+ /*---------------  ESTILO PAGINA SOBRE NOSOTROS  ------------------*/
+
+ .cajaUs1 {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-bottom: 60px;
+ }
+
+ .tituloAflv {
+     background-color: #a19c66a2;
+     border-radius: 10px;
+     padding: 0 15px;
+     margin: 30px 0;
+     font-size: 25px;
+     display: inline;
+ }
+
+ #imgAflv {
+     width: 90vw;
+     border-radius: 2px;
+     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+ }
+
+ .cajaUs2 {
+     background-color: #a19c66a2;
+     padding: 20px;
+     margin: 30px 15px;
+     border-radius: 10px;
+     font-family: "oswald";
+ }
+
+ #titConoc {
+     margin: 5px;
+ }
+
+ .cajaUs3 {
+     background-color: #a19c66a2;
+     padding: 20px;
+     margin: 30px 15px;
+     text-align: end;
+     border-radius: 10px;
+     font-family: "oswald";
+ }
+
+ #titServ {
+     text-align: end;
+ }
+
+ .cajaUs4 {
+     width: 200px;
+     margin: 30px auto;
+     background-color: #a19c66a2;
+     padding: 10px;
+     border-radius: 10px;
+     font-family: "oswald";
+     font-size: 15px;
+ }
+
+ .paddingTabla {
+     padding: 0 12px;
+ }
+
+ .img-conocenos {
+     width: 90vw;
+     margin-left: 2%;
+ }
+
+ .img-servicio {
+     width: 90vw;
+     margin-left: 2%;
+ }
+
+
+
+ @media screen and (min-width:1024px) {
+     #gridContainer-us {
+         display: grid;
+         grid-template-columns: 70% 30%;
+         grid-template-rows: auto auto auto auto auto auto auto;
+         grid-template-areas: "header header"
+             "nav nav"
+             "cajaUs1 cajaUs1"
+             "cajaUs2 img-conocenos"
+             "cajaUs3 img-servicio "
+             "cajaUs4 cajaUs4"
+             "footer footer";
+     }
+
+     .tituloAflv {
+         font-size: 45px;
+     }
+
+     .cajaUs1 {
+         margin: 30px 0;
+         grid-area: cajaUs1;
+     }
+
+     #imgAflv {
+         width: 60vw;
+         height: 60vh;
+     }
+
+     .cajaUs2 {
+         padding: 30px;
+         margin: 30px;
+         grid-area: cajaUs2;
+     }
+
+     #titConoc {
+         font-size: 60px;
+     }
+
+     #parrafConoc {
+         font-size: 25px;
+     }
+
+     .cajaUs3 {
+         padding: 30px;
+         margin: 30px;
+         grid-area: cajaUs3;
+     }
+
+     #titServ {
+         font-size: 60px;
+     }
+
+     #parrafServ {
+         font-size: 25px;
+     }
+
+     .cajaUs4 {
+         width: 340px;
+         padding: 30px;
+         font-size: 30px;
+         grid-area: cajaUs4;
+     }
+
+
+     .img-conocenos {
+         grid-area: img-conocenos;
+         width: 28vw;
+         margin: auto 0;
+     }
+
+     .img-servicio {
+         grid-area: img-servicio;
+         width: 28vw;
+         margin: auto 0;
+     }
+
+ }
+
+
+
+
+ /* Estilos pagina Contacto */
+
+ .flexCont {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
+ }
+
+ .caja-form {
+     background-color: #e9e9e9;
+     width: 50%;
+     height: 30vh;
+     margin: 40px 0;
+ }
+
+
+ .titulo-form {
+     text-align: center;
+     margin: 30px 0;
+
+ }
+
+ .formulario {
+     text-align: center;
+     padding: 30px 0;
+ }
+
+ .inputs {
+     margin: 0 10px;
+     width: 20em;
+ }
+
+ .boton-form {
+     margin: 20px 0;
+ }
+
+ .mapa {
+     width: 90vw;
+     height: 80vh;
+     margin: 120px 0;
+ }
