@@ -35,7 +35,7 @@
  }
 
 
- .container {
+ .container-hdr{
      width: 98%;
      margin: 0 1.2vw;
  }
@@ -64,10 +64,6 @@
      height: 100vh;
      border-bottom: 1px solid black;
      display: none;
- }
-
- .menu a:hover {
-     background-color: white;
  }
 
  .nav-display {
@@ -132,23 +128,22 @@
 
  footer h2 {
      color: black;
-     height: auto;
      font-size: 2rem;
-     margin-left: 20px;
  }
 
  .footer-logo {
-     margin: 10px;
+     margin: 14px 5vw;
  }
 
  .ftr-info {
      width: auto;
      height: 100%;
-
+     color: black;
+     margin-bottom: 15px;
  }
 
  .padding-info {
-     margin: 10px 30px;
+     margin: 10px 5vw;
      font-family: "oswald";
  }
 
@@ -163,7 +158,8 @@
      flex-direction: column;
      justify-content: space-around;
      align-items: center;
-     margin-right: 5%;
+     margin-right: 3vw;
+     text-align: center;
  }
 
  .fb {
@@ -172,6 +168,11 @@
 
  .imgFooter {
      width: 35px;
+ }
+
+ .text-RedesSoc{
+     font-size: 14px;
+     color: rgb(245, 245, 245);
  }
 
  /*          CONTENIDO PRINCIPAL           */
@@ -215,6 +216,7 @@
      padding: 15px 20px;
      margin: 0 14px;
      border-radius: 10px;
+     border: 1.5px solid rgba(255, 255, 255, 0.2);
  }
 
 
@@ -234,7 +236,6 @@
      padding: 25px 0;
      margin: 25px 0;
      font-size: 23px;
-     color: rgb(12, 12, 12);
      font-weight: 600;
      border-top: 2px solid rgba(146, 146, 146, 0.836);
      border-bottom: 1px solid rgba(146, 146, 146, 0.836);
@@ -271,7 +272,9 @@
      color: white;
  }
 
-
+.texto-negro{
+    color: rgb(13, 13, 13);
+}
 
  /*         SECCION RUBROS         */
 
@@ -391,10 +394,7 @@
 
      /* FOOTER */
      footer h2 {
-         color: black;
-         height: auto;
          font-size: 3rem;
-         margin-left: 20px;
      }
 
      .padding-info {
@@ -483,18 +483,19 @@
 
      header h1 {
          font-size: 3vw;
+         padding: 16px;
      }
 
-     /* BARRA DE NAV */
-     .menu {
+     /*        BARRA DE NAV         */
+     .menu{
          height: auto;
          display: block;
          grid-area: nav;
      }
 
      .menu a:hover {
-         background-color: rgba(134, 134, 134, 0.509);
-         padding: 10px;
+         background-color: rgba(134, 134, 134, 0.5);
+         padding: 20px  ;
          color: rgb(30, 30, 30);
      }
 
@@ -504,6 +505,7 @@
          flex-direction: row;
          justify-content: space-evenly;
          margin-bottom: 0;
+         padding: 0;
      }
 
      nav ul li {
@@ -514,6 +516,15 @@
 
      .nav-icono {
          display: none;
+     }
+
+     /*   FOOTER     */
+
+     .text-RedesSoc{
+         font-size: 20px;
+         padding: 10px;
+         margin-right: 10px;
+         border-right: 1px solid white;
      }
 
      /*------------------- PAGINA INDEX --------------------------*/
@@ -589,8 +600,31 @@
  }
 
  /*-----------  ESTILOS PAGINA PRODUCTOS  ----------------*/
+ #categs{
+     background-color: #696867;
+     color: white;
+ }
+ .despl-prods{
+     padding: 10px 0;
+     border-bottom: 1px solid black;
+ }
+ .click-prod:active{
+     color: black;
+ }
+ #herram li{
+     padding-top: 10px;
+ }
 
 
+
+ .barra-lateral{
+     width: auto;
+     height: 100%;
+     border-right: 1px solid black;
+ }
+ .titulo-prods{
+    font-weight: 800;
+ }
 
  /*---------------  ESTILO PAGINA SOBRE NOSOTROS  ------------------*/
 
