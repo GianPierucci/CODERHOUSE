@@ -15,28 +15,29 @@
 </head>
 
 <body>
-    <div class="gridContainer">
+    <div id="gridContainer-index">
         <header>
             <div class="container-hdr flex-header">
                 <h1>AFILVEN</h1>
                 <h3 class="subtit">desde 1994</h3>
-                <button class="nav-icono icon-menu"></button>
+                <button type="button" class="icon-menu" data-bs-toggle="collapse" data-bs-target="#nav-mobile"></button>
             </div>
         </header>
 
-        <nav class="menu">
-            <ul class="nav-display">
-                <li><a href="index.html" class="noUnderlined colorNavs">INICIO</a></li>
-                <li><a href="productos.html" class="noUnderlined colorNavs">PRODUCTOS</a>
-                    <ul class="prod-submenu">
-                        <li>HERRAMIENTAS</li>
-                        <li>CUCHILLOS</li>
-                        <li>MAQUINAS</li>
-                        <li>REPUESTOS</li>
+        <nav class="menu navbar-expand-lg d-flex align-content-center">
+            <div id="nav-mobile" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto margen-desktop">
+                <li><a href="index.html" class="colorNavs noUndlined">INICIO</a></li>
+                <li class="dropdown"><a href="productos.html" class="colorNavs noUndlined dropdown-toggle" role="button" data-bs-toggle="dropdown">PRODUCTOS</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item"><a class="noUndlined text-dark" href="productos.html">HERRAMIENTAS</a></li>
+                        <li class="dropdown-item"><a class="noUndlined text-dark" href="productos.html">CUCHILLOS</a></li>
+                        <li class="dropdown-item"><a class="noUndlined text-dark" href="productos.html">MAQUINAS</a></li>
+                        <li class="dropdown-item"><a class="noUndlined text-dark" href="productos.html">REPUESTOS</a></li>
                     </ul>
                 </li>
-                <li><a href="us.html" class="noUnderlined colorNavs">SOBRE NOSOTROS</a></li>
-                <li><a href="contacto.html" class="noUnderlined colorNavs">CONTACTO</a></li>
+                <li><a href="us.html" class="colorNavs noUndlined">SOBRE NOSOTROS</a></li>
+                <li><a href="contacto.html" class="colorNavs noUndlined">CONTACTO</a></li>
                 <li>
                     <form action="" method="get" class="buscador">
                         <input type="text">
@@ -44,6 +45,7 @@
                     </form>
                 </li>
             </ul>
+        </div>
         </nav>
 
         <main>
@@ -78,17 +80,17 @@
                 <p class="texto-negro">BUSCA LO QUE TE INTERESA SEGUN TU RUBRO</p>
             </h3>
             <div class="caja-rubros">
-                <a href="metalurgica.html" class="noUnderlined">
+                <a href="metalurgica.html" class="noUndlined">
                     <div id="imgMet" class="cajaimg">
                         <p class="textIzq font">METALURGICA</p>
                     </div>
                 </a>
-                <a href="carpinteria.html" class="noUnderlined">
+                <a href="carpinteria.html" class="noUndlined">
                     <div id="imgCarp" class="cajaimg">
                         <p class="textDerc font">CARPINTERIA</p>
                     </div>
                 </a>
-                <a href="carniceria.html" class="noUnderlined">
+                <a href="carniceria.html" class="noUndlined">
                     <div id="imgCarnic" class="cajaimg">
                         <p class="textIzq font">CARNICERIA</p>
                     </div>
@@ -118,15 +120,15 @@
             </div>
 
             <div class="redes-sociales">
-                <a class="iconFooter1 noUnderlined" href="https://www.instagram.com/afilvenvt/" target="blank">
+                <a class="iconFooter1 noUndlined" href="https://www.instagram.com/afilvenvt/" target="blank">
                     <span class="text-RedesSoc">Instagram</span> 
                     <img src="./imgs/ig.png" alt="Nuestro Instagram" class="imgFooter">
                 </a>
-                <a class="noUnderlined" href="https://wa.me/5493462646890" target="blank">
+                <a class="noUndlined" href="https://wa.me/5493462646890" target="blank">
                     <span class="text-RedesSoc">WhatsApp</span>
                     <img src="./imgs/wtp.png" alt="Nuestro Whatsapp" class="imgFooter">
                 </a>
-                <a class="iconFooter2 noUnderlined" href="https://www.facebook.com/alejandro.pierucci.71" target="blank">
+                <a class="iconFooter2 noUndlined" href="https://www.facebook.com/alejandro.pierucci.71" target="blank">
                     <span class="text-RedesSoc">Facebook</span>
                     <img src="./imgs/fb.png" alt="Nuestro Facebook" class="imgFooter fb">
                 </a>
