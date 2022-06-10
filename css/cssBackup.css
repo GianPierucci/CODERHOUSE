@@ -1,0 +1,917 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e9e9e9;
+}
+
+ul li {
+    list-style: none;
+}
+
+.cursor{
+    cursor: pointer;
+}
+/*------------VISTA PARA MOBILE--------------*/
+
+/*         HEADER           */
+header {
+    background: #CC2936;
+    color: white;
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 15;
+}
+
+header h1 {
+    font-weight: 800;
+    font-size: 35px;
+    padding: 12px;
+}
+
+
+.container-hdr{
+    width: 98%;
+    margin: 0 1.2vw;
+}
+
+.flex-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subtit {
+    font-size: 1rem;
+    display: none;
+    padding-left: 5px;
+}
+
+
+
+
+/*           BARRA DE NAVEGACION            */
+
+.menu {
+    background: #696867;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+
+nav ul li{
+    font-family: "oswald";
+    font-size: 22px;
+    font-weight: 500;
+    padding: 20px 0;
+    /* border-bottom: 1px solid lightgrey; */
+    text-align: center;
+}
+
+
+.colorNavs {
+    color: white;
+}
+
+.noUndlined {
+    text-decoration: none;
+}
+
+.menu a:hover {
+   color: rgb(30, 30, 30);
+}
+
+
+
+/*            FOOTER             */
+
+footer {
+    background: #545454;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flexinfo {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+footer h2 {
+    color: black;
+    font-size: 2rem;
+}
+
+.footer-logo {
+    margin: 14px 5vw;
+}
+
+.ftr-info {
+    width: auto;
+    height: 100%;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.padding-info {
+    margin: 10px 5vw;
+    font-family: "oswald";
+}
+
+.icons-info {
+    width: 20px;
+    border-radius: 5px;
+}
+
+
+.redes-sociales {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 3vw;
+    text-align: center;
+}
+
+.fb {
+    border-radius: 10px;
+}
+
+.imgFooter {
+    width: 35px;
+}
+
+.text-RedesSoc{
+    font-size: 17px;
+    font-family: "oswald";
+    color: rgb(0, 0, 0);
+}
+
+/*---------- PAGINA INDEX ----------*/
+
+/*          CONTENIDO PRINCIPAL           */
+
+.container-main {
+    width: 100%;
+    height: auto;
+    margin-bottom: 35px;
+}
+
+
+.container-main div {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url(../imgs/Captura.PNG);
+    background-size: cover;
+    background-position: top 20% right 0;
+    width: 100%;
+    height: 300px;
+
+}
+
+#flex-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(240, 240, 240);
+}
+
+#flex-main span {
+    padding: 10px;
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    display: block;
+    padding: 8px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#flex-main p {
+    font-size: 19px;
+    background-color: #696867a6;
+    padding: 15px 20px;
+    margin: 0 14px;
+    border-radius: 10px;
+    border: 1.5px solid rgba(255, 255, 255, 0.2);
+}
+
+
+
+/*             SECCION MARCAS             */
+
+.seccion-marcas {
+    background-color: #b3b3b3;
+    padding-bottom: 8px;
+    margin: 80px 0 20px 0;
+    border-bottom: 2px solid #898989;
+}
+
+.texto-demost {
+    background-color: #b3b3b3;
+    text-align: center;
+    padding: 25px 0;
+    margin: 25px 0;
+    font-size: 23px;
+    font-weight: 600;
+    border-top: 2px solid rgba(146, 146, 146, 0.836);
+    border-bottom: 1px solid rgba(146, 146, 146, 0.836);
+}
+
+.caja1 {
+    background-color: #fce575c0;
+    height: 190px;
+    padding: 25px 0;
+    margin-bottom: 50px;
+    overflow: scroll;
+    overflow-y: hidden;
+    display: flex;
+    border-top: 1px solid rgba(161, 161, 161, 0.692);
+    border-bottom: 1px solid rgba(161, 161, 161, 0.692);
+}
+
+.imagen {
+    margin: 0 20px 10px;
+}
+
+#texto-marcas {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0 4%;
+}
+
+#texto-marcas p {
+    padding: 10px;
+    font-family: "oswald";
+    font-size: 20px;
+    background-image: linear-gradient(to left, rgb(20, 20, 20), rgba(204, 0, 0, 0.9));
+    border-radius: 15px;
+    color: white;
+}
+
+.texto-negro{
+   color: rgb(13, 13, 13);
+}
+
+/*         SECCION RUBROS         */
+
+#demostrac2 {
+    background-color: #9b9b9b;
+    width: 100%;
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 23px;
+    font-weight: 600;
+    border-top: 2px solid rgba(113, 113, 113, 0.918);
+    border-bottom: 1px solid rgba(113, 113, 113, 0.916);
+}
+
+.seccion-rubros {
+    background-color: #b3b3b3;
+    padding-bottom: 50px;
+    margin: 80px 0;
+    border-bottom: 2px solid rgba(146, 146, 146, 0.836);
+}
+
+
+.cajaimg {
+    width: 100%;
+    height: 350px;
+    margin: 70px 0;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+#imgMet {
+    background-image: url(../imgs/met.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.textIzq {
+    color: white;
+    font-size: 25px;
+    padding: 15px 40px;
+    margin-left: 5%;
+    margin-bottom: 4%;
+    font-weight: 600;
+    background-color: #7a6747cc;
+    border: 2px solid #41372967;
+    border-radius: 6px;
+    transition: all 0.5s;
+}
+
+.textIzq:hover,
+.textDerc:hover {
+    padding: 25px 60px;
+}
+
+
+#imgCarp {
+    background-image: url(../imgs/dewalt.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+.textDerc {
+    color: white;
+    padding: 15px 40px;
+    margin-right: 5%;
+    margin-bottom: 4%;
+    font-size: 25px;
+    font-weight: 600;
+    background-color: #7a6747cc;
+    border: 2px solid #41372967;
+    border-radius: 6px;
+    transition: all 0.5s;
+}
+
+#imgCarnic {
+    background-image: url(https://sanluispotosi.quadratin.com.mx/www/wp-content/uploads/2021/10/Carnicero-1160x700.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.bordear {
+    border: 1px solid black;
+}
+
+
+.font {
+    font-family: "oswald";
+}
+
+.fontstyle {
+    font-size: 17px;
+}
+
+
+
+
+
+
+@media screen and (min-width:992px){ 
+   .icon-menu{
+       display: none;
+   }
+}
+   
+
+
+
+/*----------MEDIA QUERY TABLET----------*/
+
+@media screen and (min-width:768px) {
+
+    /* HEADER */
+    header h1 {
+        font-size: 45px;
+    }
+
+    /* FOOTER */
+    footer h2 {
+        font-size: 3rem;
+    }
+
+    .padding-info {
+        font-size: 27px;
+    }
+
+    .icons-info {
+        width: 30px;
+    }
+
+    .fb {
+        border-radius: 10px;
+    }
+
+    .imgFooter {
+        width: 55px;
+    }
+
+    /*-------------- PAGINA INDEX -------------*/
+
+    /* CONT PRINC */
+    .container-main div {
+        height: 450px;
+    }
+
+    #flex-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #flex-main span {
+        font-size: 3.5rem;
+    }
+
+    #flex-main p {
+        font-size: 25px;
+    }
+
+    /* SECCION MARCAS */
+    .texto-demost {
+        font-size: 40px;
+    }
+
+    .caja1 {
+        height: 290px;
+        padding: 35px 0;
+    }
+
+    /* SECCION RUBROS */
+    #demostrac2 {
+        font-size: 42px;
+    }
+
+    .cajaimg {
+        height: 550px;
+        margin: 70px 0 120px;
+    }
+
+    .textIzq {
+        font-size: 55px;
+    }
+
+    .textDerc {
+        font-size: 55px;
+    }
+
+
+
+}
+
+/*-------VISTA DESKTOP--------*/
+
+@media screen and (min-width:992px) {
+
+    /* GRID */
+    #gridContainer-index {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: "header header"
+            "nav nav"
+            "main main"
+            "seccion-marcas texto-main"
+            "seccion-rubros seccion-rubros"
+            "footer footer";
+    }
+    
+    header h1 {
+        font-size: 3vw;
+        padding: 16px;
+    }
+
+    /*        BARRA DE NAV         */
+    .menu{
+        grid-area: nav;
+        height: 60px ;
+    }
+
+    .menu a:hover {
+        color: rgb(30, 30, 30);
+    }
+
+    nav ul li {
+        font-size: 17px;
+        padding: 10px 40px;
+        border: none;
+        text-align: center;
+    }
+
+    .margen-desktop{
+        margin-right: 35px;
+    }
+
+
+    /*   FOOTER     */
+
+    .text-RedesSoc{
+        font-size: 24px;
+        padding: 10px;
+        margin-right: 10px;
+        border-right: 1px solid rgb(0, 0, 0);
+    }
+
+    /*------------------- PAGINA INDEX --------------------------*/
+
+    /* CONTENIDO PRINCIPAL */
+    .container-main div{
+        background-attachment: fixed;
+    }
+    #flex-main p{
+        font-size: 28px;
+        margin: 0 45px;
+    }
+    
+
+    /* SECCION MARCAS */
+    .seccion-marcas {
+        background-image: linear-gradient(to right, #898989, #e9e9e9);
+        border-top: 2px solid #898989;
+        grid-area: seccion-marcas;
+    }
+
+    .texto-demost {
+        background-image: linear-gradient(to right, #898989, #e9e9e9);
+        font-size: 40px;
+        border: none;
+    }
+
+    #texto-marcas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+        padding: 80px 0;
+        margin: 80px 0 20px 0;
+        border-top: 2px solid #898989;
+        border-bottom: 2px solid #898989;
+    }
+
+    #texto-marcas p {
+        color: black;
+        font-weight: 500;
+        padding: 0 80px;
+        font-family: "oswald";
+        font-size: 35px;
+        background-image: none;
+    }
+
+    .caja1 {
+        background-image: linear-gradient(to right, #898989, #e9e9e9);
+        height: 350px;
+        border: none;
+    }
+
+    /* SECCION RUBROS */
+    .seccion-rubros {
+        grid-area: seccion-rubros;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    header {
+        grid-area: header;
+
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+}
+
+/*-----------  ESTILOS PAGINA PRODUCTOS  ----------------*/
+#categs{
+    background-color: #696867;
+    color: white;
+}
+
+.despl-prods{
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    font-weight: 500;
+}
+.click-prod:active{
+    color: black;
+}
+
+.titulo-prods{
+   font-weight: 800;
+}
+
+.botonCanvas{
+    padding: 15px 20px;
+    margin: 20px;
+}
+.offcan-categs{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#secc-prods{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: wrap row;
+    align-items: center;
+    padding: 30px 40px;
+    
+}
+.lateral-categs{
+   width: 100%;
+}
+.caja-prods{
+   background-color: rgba(0, 0, 0, 0.04);
+   width: 20%;
+   min-width: 270px;
+   margin: 20px;
+   padding: 15px;
+   border: 1px solid rgba(0, 0, 0, 0.4);
+   border-radius: 5px;
+}
+
+.img-cuchillo{
+   width: 100%;
+   border-radius: 20px;
+   border: 2px solid rgba(128, 128, 128, 0.1);
+}
+
+.info-prods{
+   margin-top: 12px;
+}
+
+.caja-modal-prods{
+   padding: 30px;
+}
+
+
+
+
+@media screen and (max-width: 991px){
+   #secc-categs{
+       display: none;
+   }    
+}
+
+@media screen and (min-width: 991px){
+   
+    #secc-categs{
+    background-color: #b3b3b3;
+   }
+   
+    .borde-right{
+       border-right: 1px solid black;
+    }
+
+    .titulo-prods{
+        padding: 25px 0 20px 6%;
+        font-size: 2rem;
+    }
+
+    .despl-prods{
+        padding: 20px 0;
+        font-size: 21px;
+    }
+    .despl-prods ul{
+        padding-left: 25px;
+    }
+    .despl-prods li{
+        font-weight: 400;
+        padding-top: 16px;
+    }
+    
+    .offcan-categs{
+        display: none;
+    }
+    #secc-prods{
+        padding: 100px;
+    }
+    .caja-prods{
+       width: 20%;
+       min-width: 300px;
+   }
+   .caja-prods:hover{
+       box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+   }
+   
+   .nombre-prod{
+       font-size: 24px;
+   }
+   .valor-prod{
+
+   }
+}
+
+
+
+
+
+
+
+
+/*---------------  ESTILO PAGINA SOBRE NOSOTROS  ------------------*/
+
+.cajaUs1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.tituloAflv {
+    background-color: #a19c66a2;
+    border-radius: 10px;
+    padding: 0 15px;
+    margin: 30px 0;
+    font-size: 25px;
+    display: inline;
+}
+
+#imgAflv {
+    width: 90vw;
+    border-radius: 2px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cajaUs2 {
+    background-color: #a19c66a2;
+    padding: 20px;
+    margin: 30px 15px;
+    border-radius: 10px;
+    font-family: "oswald";
+}
+
+#titConoc {
+    margin: 5px;
+}
+
+.cajaUs3 {
+    background-color: #a19c66a2;
+    padding: 20px;
+    margin: 30px 15px;
+    text-align: end;
+    border-radius: 10px;
+    font-family: "oswald";
+}
+
+#titServ {
+    text-align: end;
+}
+
+.cajaUs4 {
+    width: 200px;
+    margin: 30px auto;
+    background-color: #a19c66a2;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: "oswald";
+    font-size: 15px;
+}
+
+.paddingTabla {
+    padding: 0 12px;
+}
+
+.img-conocenos {
+    width: 90vw;
+    margin-left: 5%;
+}
+
+.img-servicio {
+    width: 90vw;
+    margin-left: 5%;
+}
+
+
+
+@media screen and (min-width:1024px) {
+    #gridContainer-us {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-areas: "header header"
+            "nav nav"
+            "cajaUs1 cajaUs1"
+            "cajaUs2 img-conocenos"
+            "cajaUs3 img-servicio "
+            "cajaUs4 cajaUs4"
+            "footer footer";
+    }
+
+    .tituloAflv {
+        font-size: 45px;
+    }
+
+    .cajaUs1 {
+        margin: 30px 0;
+        grid-area: cajaUs1;
+    }
+
+    #imgAflv {
+        width: 60vw;
+        height: 60vh;
+    }
+
+    .cajaUs2 {
+        padding: 30px;
+        margin: 30px;
+        grid-area: cajaUs2;
+    }
+
+    #titConoc {
+        font-size: 60px;
+    }
+
+    #parrafConoc {
+        font-size: 25px;
+    }
+
+    .cajaUs3 {
+        padding: 30px;
+        margin: 30px;
+        grid-area: cajaUs3;
+    }
+
+    #titServ {
+        font-size: 60px;
+    }
+
+    #parrafServ {
+        font-size: 25px;
+    }
+
+    .cajaUs4 {
+        width: 340px;
+        padding: 30px;
+        font-size: 30px;
+        grid-area: cajaUs4;
+    }
+
+
+    .img-conocenos {
+        grid-area: img-conocenos;
+        width: 28vw;
+        margin: auto 0;
+    }
+
+    .img-servicio {
+        grid-area: img-servicio;
+        width: 28vw;
+        margin: auto 0;
+    }
+
+}
+
+
+
+
+/* Estilos pagina Contacto */
+
+.flexCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.caja-form {
+    background-color: #e9e9e9;
+    width: 50%;
+    height: 30vh;
+    margin: 40px 0;
+}
+
+
+.titulo-form {
+    text-align: center;
+    margin: 30px 0;
+
+}
+
+.formulario {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.inputs {
+    margin: 0 10px;
+    width: 20em;
+}
+
+.boton-form {
+    margin: 20px 0;
+}
+
+.mapa {
+    width: 90vw;
+    height: 80vh;
+    margin: 120px 0;
+}
+
+.icon-menu{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 35px;
+}
