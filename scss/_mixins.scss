@@ -1,0 +1,9 @@
+@import 'variables';
+
+@mixin desktop {
+    @media (min-width: #{$desktop}){
+        @content;    
+    }
+    
+}
+

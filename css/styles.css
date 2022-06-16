@@ -1,20 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #e9e9e9; }
-  body ul li {
-    list-style: none; }
-  body .cursor {
-    cursor: pointer; }
-  body .noUndlined {
-    text-decoration: none; }
-
-/*------------VISTA PARA MOBILE--------------*/
-/*         HEADER           */
+/*         HEADER MOBILE          */
 header {
   background: #CC2936;
   color: white;
@@ -23,7 +7,7 @@ header {
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   position: sticky;
   top: 0;
-  z-index: 15; }
+  z-index: 999; }
   header h1 {
     font-weight: 800;
     font-size: 35px;
@@ -40,30 +24,27 @@ header {
   justify-content: space-between; }
 
 .subtit {
-  font-size: 1rem;
-  display: none;
-  padding-left: 5px; }
+  display: none; }
 
-/*           BARRA DE NAVEGACION            */
-.menu {
-  background: #696867;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.8); }
-  .menu a:hover {
-    color: #1e1e1e; }
-  .menu .colorNavs {
-    color: white; }
+@media screen and (min-width: 768px) {
+  header h1 {
+    font-size: 45px; } }
 
-nav ul li {
-  font-family: "oswald";
-  font-size: 22px;
-  font-weight: 500;
-  padding: 20px 0;
-  /* border-bottom: 1px solid lightgrey; */
-  text-align: center; }
+@media screen and (min-width: 992px) {
+  header h1 {
+    font-size: 56px;
+    padding: 16px 0 2px; }
+  header .flex-header {
+    flex-direction: column;
+    align-items: flex-start; }
+  header .subtit {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 14px; } }
 
-/*            FOOTER             */
 footer {
-  background: #545454;
+  background: #696867;
   width: 100%;
   height: auto;
   display: flex;
@@ -104,6 +85,60 @@ footer {
     font-size: 17px;
     font-family: "oswald";
     color: black; }
+
+@media screen and (min-width: 768px) {
+  /* FOOTER */
+  footer h2 {
+    font-size: 3rem; }
+  footer .padding-info {
+    font-size: 20px; }
+  footer .icons-info {
+    width: 30px; }
+  .redes-sociales .fb {
+    border-radius: 10px; }
+  .redes-sociales .imgFooter {
+    width: 55px; } }
+
+@media screen and (min-width: 992px) {
+  footer .padding-info {
+    font-size: 27px; }
+  .redes-sociales .text-RedesSoc {
+    font-size: 24px;
+    padding: 10px;
+    margin-right: 10px;
+    border-right: 1px solid black; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e9e9e9; }
+  body ul li {
+    list-style: none; }
+  body .cursor {
+    cursor: pointer; }
+  body .noUndlined {
+    text-decoration: none; }
+
+/*------------VISTA PARA MOBILE--------------*/
+/*       BARRA DE NAVEGACION        */
+.menu {
+  background: #696867;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8); }
+  .menu a:hover {
+    color: #1e1e1e; }
+  .menu .colorNavs {
+    color: white; }
+
+nav ul li {
+  font-family: "oswald";
+  font-size: 22px;
+  font-weight: 500;
+  padding: 20px 0;
+  text-align: center; }
 
 /*---------- PAGINA INDEX ----------*/
 /*          CONTENIDO PRINCIPAL           */
@@ -271,20 +306,6 @@ footer {
 
 /*----------MEDIA QUERY TABLET----------*/
 @media screen and (min-width: 768px) {
-  /* HEADER */
-  header h1 {
-    font-size: 45px; }
-  /* FOOTER */
-  footer h2 {
-    font-size: 3rem; }
-  footer .padding-info {
-    font-size: 20px; }
-  footer .icons-info {
-    width: 30px; }
-  .redes-sociales .fb {
-    border-radius: 10px; }
-  .redes-sociales .imgFooter {
-    width: 55px; }
   /*-------------- PAGINA INDEX -------------*/
   /* CONT PRINC */
   .container-main #flex-main {
@@ -322,9 +343,6 @@ footer {
     grid-template-columns: 60% 40%;
     grid-template-rows: auto auto auto auto auto auto;
     grid-template-areas: "header header" "nav nav" "main main" "seccion-marcas texto-main" "seccion-rubros seccion-rubros" "footer footer"; }
-  header h1 {
-    font-size: 3vw;
-    padding: 16px; }
   /*        BARRA DE NAV         */
   .menu {
     grid-area: nav;
@@ -338,14 +356,6 @@ footer {
     text-align: center; }
   .margen-desktop {
     margin-right: 35px; }
-  /*   FOOTER     */
-  footer .padding-info {
-    font-size: 27px; }
-  .redes-sociales .text-RedesSoc {
-    font-size: 24px;
-    padding: 10px;
-    margin-right: 10px;
-    border-right: 1px solid black; }
   /*------------------- PAGINA INDEX --------------------------*/
   /* CONTENIDO PRINCIPAL */
   .container-main #flex-main {
@@ -449,11 +459,11 @@ footer {
 .caja-modal-prods {
   padding: 30px; }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   #secc-categs {
     display: none; } }
 
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 992px) {
   #secc-categs {
     background-color: #b3b3b3; }
   .borde-right {
@@ -544,7 +554,7 @@ footer {
   width: 90vw;
   margin-left: 5%; }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   #gridContainer-us {
     display: grid;
     grid-template-columns: 70% 30%;

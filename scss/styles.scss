@@ -1,3 +1,10 @@
+@import 'header';
+@import 'variables';
+@import 'mixins';
+@import 'footer';
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -25,53 +32,11 @@ body {
 
 
 /*------------VISTA PARA MOBILE--------------*/
-
-/*         HEADER           */
-header {
-    background: #CC2936;
-    color: white;
-    width: 100%;
-    height: auto;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-    position: sticky;
-    top: 0;
-    z-index: 15;
-
-    h1 {
-        font-weight: 800;
-        font-size: 35px;
-        padding: 12px;
-    }
-}
-
-
-
-
-.container-hdr {
-    width: 98%;
-    margin: 0 1.2vw;
-}
-
-.flex-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.subtit {
-    font-size: 1rem;
-    display: none;
-    padding-left: 5px;
-}
-
-
-
-
-/*           BARRA DE NAVEGACION            */
+ 
+/*       BARRA DE NAVEGACION        */
 
 .menu {
-    background: #696867;
+    background: color(gris-oscuro);
     border-bottom: 1px solid rgba(0, 0, 0, 0.8);
 
     a:hover {
@@ -89,7 +54,6 @@ nav ul li {
     font-size: 22px;
     font-weight: 500;
     padding: 20px 0;
-    /* border-bottom: 1px solid lightgrey; */
     text-align: center;
 }
 
@@ -98,74 +62,6 @@ nav ul li {
 
 
 
-
-
-
-/*            FOOTER             */
-
-footer {
-    background: #545454;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    h2 {
-        color: black;
-        font-size: 2rem;
-    }
-
-    .flexinfo {
-        display: flex;
-        flex-flow: column nowrap;
-    }
-
-    .footer-logo {
-        margin: 14px 5vw;
-    }
-
-    .ftr-info {
-        width: auto;
-        height: 100%;
-        color: black;
-        margin-bottom: 15px;
-    }
-
-    .padding-info {
-        margin: 10px 5vw;
-        font-family: "oswald";
-    }
-
-    .icons-info {
-        width: 20px;
-        border-radius: 5px;
-    }
-}
-
-
-.redes-sociales {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-right: 3vw;
-    text-align: center;
-
-    .fb {
-        border-radius: 10px;
-    }
-
-    .imgFooter {
-        width: 35px;
-    }
-
-    .text-RedesSoc {
-        font-size: 17px;
-        font-family: "oswald";
-        color: rgb(0, 0, 0);
-    }
-}
 
 
 
@@ -213,14 +109,14 @@ footer {
 /*             SECCION MARCAS             */
 
 .seccion-marcas {
-    background-color: #b3b3b3;
+    background-color: color(gris-claro);
     padding-bottom: 8px;
     margin: 80px 0 20px 0;
     border-bottom: 2px solid #898989;
 }
 
 .texto-demost {
-    background-color: #b3b3b3;
+    background-color: color(gris-claro);
     text-align: center;
     padding: 25px 0;
     margin: 25px 0;
@@ -268,7 +164,7 @@ footer {
 /*         SECCION RUBROS         */
 
 #demostrac2 {
-    background-color: #9b9b9b;
+    background-color: color(gris-claroscuro);
     width: 100%;
     text-align: center;
     padding: 25px 20px;
@@ -279,7 +175,7 @@ footer {
 }
 
 .seccion-rubros {
-    background-color: #b3b3b3;
+    background-color: color(gris-claro);
     padding-bottom: 50px;
     margin: 80px 0;
     border-bottom: 2px solid rgba(146, 146, 146, 0.836);
@@ -369,7 +265,7 @@ footer {
 
 
 
-@media screen and (min-width:992px) {
+@media screen and (min-width: $desktop) {
     .icon-menu {
         display: none;
     }
@@ -381,37 +277,6 @@ footer {
 /*----------MEDIA QUERY TABLET----------*/
 
 @media screen and (min-width:768px) {
-
-    /* HEADER */
-    header h1 {
-        font-size: 45px;
-    }
-
-    /* FOOTER */
-    footer {
-        h2 {
-            font-size: 3rem;
-        }
-
-        .padding-info {
-            font-size: 20px;
-        }
-
-        .icons-info {
-            width: 30px;
-        }
-    }
-
-    .redes-sociales {
-        .fb {
-            border-radius: 10px;
-        }
-
-        .imgFooter {
-            width: 55px;
-        }
-
-    }
 
     /*-------------- PAGINA INDEX -------------*/
 
@@ -471,7 +336,7 @@ footer {
 
 /*-------VISTA DESKTOP--------*/
 
-@media screen and (min-width:992px) {
+@media screen and (min-width: $desktop) {
 
     /* GRID */
     #gridContainer-index {
@@ -486,10 +351,7 @@ footer {
             "footer footer";
     }
 
-    header h1 {
-        font-size: 3vw;
-        padding: 16px;
-    }
+    
 
     /*        BARRA DE NAV         */
     .menu {
@@ -512,22 +374,6 @@ footer {
         margin-right: 35px;
     }
 
-
-    /*   FOOTER     */
-    footer {
-        .padding-info {
-            font-size: 27px;
-        }
-    }
-
-    .redes-sociales {
-        .text-RedesSoc {
-            font-size: 24px;
-            padding: 10px;
-            margin-right: 10px;
-            border-right: 1px solid rgb(0, 0, 0);
-        }
-    }
 
 
     /*------------------- PAGINA INDEX --------------------------*/
@@ -607,7 +453,7 @@ footer {
 
 /*-----------  ESTILOS PAGINA PRODUCTOS  ----------------*/
 #categs {
-    background-color: #696867;
+    background-color: color(gris-oscuro);
     color: white;
 }
 
@@ -677,16 +523,16 @@ footer {
 
 
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: $desktop) {
     #secc-categs {
         display: none;
     }
 }
 
-@media screen and (min-width: 991px) {
+@media screen and (min-width: $desktop) {
 
     #secc-categs {
-        background-color: #b3b3b3;
+        background-color: color(gris-claro);
     }
 
     .borde-right {
@@ -821,7 +667,7 @@ footer {
 
 
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: $desktop) {
     #gridContainer-us {
         display: grid;
         grid-template-columns: 70% 30%;

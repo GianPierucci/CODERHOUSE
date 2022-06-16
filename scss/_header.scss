@@ -1,0 +1,66 @@
+@import 'variables';
+
+@function color($color-name){
+    @return map-get($colores, $color-name);
+}
+/*         HEADER MOBILE          */
+header {
+    background: color(rojo-header);
+    color: white;
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    h1 {
+        font-weight: 800;
+        font-size: 35px;
+        padding: 12px;
+    }
+}
+
+.container-hdr {
+    width: 98%;
+    margin: 0 1.2vw;
+}
+
+.flex-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subtit {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        h1 {
+            font-size: 45px;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    header {
+        h1 {
+            font-size: 56px;
+            padding: 16px 0 2px;
+        }
+        .flex-header{
+            flex-direction: column;
+            align-items: flex-start ;
+        }
+        .subtit{
+            display: block;
+            font-size: 18px;
+            font-weight: 600;
+            padding-bottom: 14px;
+        }
+    }
+
+}
