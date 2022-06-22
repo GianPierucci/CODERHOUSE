@@ -3,7 +3,7 @@
 footer {
     background: color(gris-oscuro);
     width: 100%;
-    height: auto;
+    padding: 30px 0 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -68,7 +68,7 @@ footer {
     /* FOOTER */
 footer {
     h2 {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     .padding-info {

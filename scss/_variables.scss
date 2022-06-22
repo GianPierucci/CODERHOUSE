@@ -9,4 +9,11 @@ $colores: (rojo-header: #CC2936, gris-oscuro: #696867, gris-claroscuro: #9b9b9b,
 // BREAKPOINTS
 
 $desktop: 992px;
+$tablet: 768px;
+
+// BORDES
+
+$borde-fino: 1px solid black;
+$borde-claro: 1px solid rgba(0, 0, 0, 0.4);
+$borde-muyclaro: 2px solid rgba(128, 128, 128, 0.1);
 
