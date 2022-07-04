@@ -61,11 +61,14 @@ header {
             font-weight: 600;
             padding-bottom: 14px;
         }
+        .fa-bars{
+            display: none;
+        }
     }
 
 }
 
-.icon-menu {
+.fa-bars {
     color: white;
     background: none;
     border: none;

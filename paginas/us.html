@@ -1,61 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/fontello.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-         rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" href="../css/styles.css">
-        <title>AFILVEN</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>AFILVEN</title>
+</head>
 
 <body>
     <div id="gridContainer-us">
         <header>
             <div class="container-hdr flex-header">
                 <h1>AFILVEN</h1>
-                <h3 class="subtit">Desde 1994</h3>
-                <button type="button" class="icon-menu" data-bs-toggle="collapse" data-bs-target="#nav-mobile"></button>
+                <h3 class="subtit">Desde 1955</h3>
+                <button type="button" class="fa-solid fa-bars" data-bs-toggle="collapse" data-bs-target="#nav-mobile"></button>
             </div>
         </header>
 
         <nav class="menu navbar-expand-lg d-flex align-content-center">
             <div id="nav-mobile" class="collapse navbar-collapse">
-            <ul class="navbar-nav ms-auto me-5">
-                <li><a href="../index.html" class="colorNavs noUndlined">INICIO</a></li>
-                <li class="dropdown"><a href="productos.html" class="colorNavs noUndlined dropdown-toggle" role="button" data-bs-toggle="dropdown">PRODUCTOS</a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-item"><a class="noUndlined text-dark" href="productos.html">HERRAMIENTAS</a></li>
-                        <li class="dropdown-item"><a class="noUndlined text-dark" href="productos.html">CUCHILLOS</a></li>
-                        <li class="dropdown-item"><a class="noUndlined text-dark" href="productos.html">MAQUINAS</a></li>
-                        <li class="dropdown-item"><a class="noUndlined text-dark" href="productos.html">REPUESTOS</a></li>
-                    </ul>
-                </li>
-                <li><a href="us.html" class="colorNavs noUndlined">SOBRE NOSOTROS</a></li>
-                <li><a href="contacto.html" class="colorNavs noUndlined">CONTACTO</a></li>
-                <li>
-                    <form action="" method="get" class="buscador">
-                        <input type="text" id="busc-dentro">
-                        <input type="submit" value="Buscar">
-                    </form>
-                </li>
-            </ul>
-        </div>
+                <ul class="navbar-nav ms-auto me-5">
+                    <li><a href="../index.html" class="colorNavs noUndlined">INICIO</a></li>
+                    <li class="dropdown"><a href="#" class="colorNavs noUndlined dropdown-toggle" role="button"
+                            data-bs-toggle="dropdown">PRODUCTOS</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item"><a class="noUndlined text-dark"
+                                    href="../productos/productos.html">HERRAMIENTAS</a></li>
+                            <li class="dropdown-item"><a class="noUndlined text-dark"
+                                    href="../productos/cuchillos.html">CUCHILLOS</a></li>
+                            <li class="dropdown-item"><a class="noUndlined text-dark" href="../productos/productos.html">MAQUINAS</a>
+                            </li>
+                            <li class="dropdown-item"><a class="noUndlined text-dark"
+                                    href="../productos/productos.html">REPUESTOS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="us.html" class="colorNavs noUndlined">SOBRE NOSOTROS</a></li>
+                    <li><a href="contacto.html" class="colorNavs noUndlined">CONTACTO</a></li>
+                    <li>
+                        <form action="" method="get" class="buscador">
+                            <input type="text" id="busc-dentro">
+                            <input type="submit" value="Buscar">
+                        </form>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
-        
 
+        <section class="seccion-us">
             <div class="cajaUs1">
                 <h1 class="tituloAflv font">NOSOTROS</h1>
                 <img id="imgAflv" src="../imgs/afil.jpg" alt="AFILVEN">
             </div>
-
 
             <div class="cajaUs2">
                 <h2 id="titConoc">Conocenos</h2>
@@ -72,7 +75,42 @@
                     Fugiat, placeat doloremque ipsum vitae ea velit totam voluptatum, nobis, commodi officia atque?</p>
             </div>
 
-            <img src="../imgs/afilado-cuch.jpg" alt="" class="img-conocenos">
+            <div id="carrusel2" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carrusel2" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carrusel2" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carrusel2" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carrusel2" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#carrusel2" data-bs-slide-to="4"></button>
+                    <button type="button" data-bs-target="#carrusel2" data-bs-slide-to="5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../imgs/local1.jpg" alt="" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../imgs/local2.jpg" alt="" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../imgs/local3.jpg" alt="" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../imgs/local4.jpg" alt="" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../imgs/local5.jpg" alt="" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../imgs/local6.jpg" alt="" class="d-block w-100">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrusel2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrusel2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
 
             <div class="cajaUs3">
                 <h2 id="titServ">Nuestro servicio</h2>
@@ -86,27 +124,39 @@
                     ab veniam,
                     laborum, deleniti a obcaecati ipsam.</p>
             </div>
-            
-            <img src="../imgs/afilado-tijeras.jpg" alt="" class="img-servicio">
 
-            <div class="cajaUs4">
-                <table>
-                    <tr>
-                        <td class="paddingTabla"><strong>Numero</strong></td>
-                        <td class="paddingTabla"><strong>Direccion</strong></td>
-                    </tr>
-
-                    <tr>
-                        <td class="paddingTabla">32345345</td>
-                        <td class="paddingTabla">tal tal 578</td>
-                    </tr>
-                </table>
+            <div id="carrusel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carrusel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carrusel" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../imgs/afilado-tijeras2.jpg" alt="" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../imgs/cadenams.jpg" alt="" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../imgs/sierracirc2.jpg" alt="" class="d-block w-100">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
+        </section>
 
-        
 
-    
-    
+
+
+
+
+
         <footer>
             <div class="flexinfo">
                 <div class="footer-logo font">
@@ -130,7 +180,7 @@
 
             <div class="redes-sociales">
                 <a class="iconFooter1 noUndlined" href="https://www.instagram.com/afilvenvt/" target="blank">
-                    <span class="text-RedesSoc">Instagram</span> 
+                    <span class="text-RedesSoc">Instagram</span>
                     <img src="../imgs/ig.png" alt="Nuestro Instagram" class="imgFooter">
                 </a>
                 <a class="noUndlined" href="https://wa.me/5493462646890" target="blank">
@@ -144,12 +194,11 @@
             </div>
         </footer>
 
-</div>
-<script 
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
-integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
-crossorigin="anonymous">        
-</script>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script src="https://kit.fontawesome.com/3266782ece.js" crossorigin="anonymous"></script>
 
 </body>
 
