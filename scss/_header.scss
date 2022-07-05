@@ -24,6 +24,9 @@ header {
 .container-hdr {
     width: 98%;
     margin: 0 1.2vw;
+    & button{
+        margin: 10px;
+    }
 }
 
 .flex-header {
@@ -48,8 +51,8 @@ header {
 @media screen and (min-width: 992px) {
     header {
         h1 {
-            font-size: 56px;
-            padding: 16px 0 2px;
+            font-size: 45px;
+            padding: 5px 0 0;
         }
         .flex-header{
             flex-direction: column;
@@ -59,7 +62,7 @@ header {
             display: block;
             font-size: 18px;
             font-weight: 600;
-            padding-bottom: 14px;
+            padding-left: 15px;
         }
         .fa-bars{
             display: none;
