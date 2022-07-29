@@ -1,4 +1,4 @@
-/* function login() {
+function login() {
     let contraGuardada = prompt("Ingresa tu contraseña guardada")
     while (contraGuardada != true) {
         if (contraGuardada == contraseñaU) {
@@ -9,19 +9,28 @@
             contraGuardada = prompt("Contraseña invalida, vuelve a intentarlo")
         }
     }
-} */
-
-function producto1 (nombre, marca, precio){
-    this.nombre = nombre;
-    this.marca = marca;
-    this.precio = precio;
 }
 
-const cuchillo1 = new producto1 ("cuchillo", "mundial", 4000)
+const stockProds = [
+    {id:1, producto: "cuchillo", tipo: "hogar", marca: "mundial", largo: "20cm", precio: 1500 },
+    {id:2, producto: "cuchillo", tipo: "cocina", marca: "mundial", largo: "25cm", precio: 2000 },
+    {id:3, producto: "cuchillo", tipo: "cocina", marca: "mundial", largo: "30cm", precio: 2500 },
+    {id:4, producto: "cuchillo", tipo: "cocina", marca: "mundial", largo: "35cm", precio: 3000 },
+    {id:5, producto: "cuchillo", tipo: "cocina", marca: "mundial", largo: "40cm", precio: 3500 },
+    {id:6, producto: "tijera", tipo: "hogar", marca: "mundial", largo: "15cm", precio: 1800 },
+    {id:7, producto: "chaira", tipo: "hogar", marca: "mundial", largo: "20cm", precio: 1500 },]
 
-console.log(cuchillo1.precio);
 
-/* let cuenta = prompt("Deseas crear una cuenta? \n1. Crear una cuenta \n2. Proseguir sin una cuenta (No podras comprar)")
+let carrito = []
+const agregarProd = (prodId) => {
+    const item = stockProds.find((prod) => prod.id === prodId)
+    carrito.push(item); 
+} ;
+
+const mostrarPrecio = stockProds.map(producto => producto.precio)
+
+
+let cuenta = prompt("Deseas crear una cuenta? \n1. Crear una cuenta \n2. Proseguir sin una cuenta (No podras comprar)")
 let ingresar = false;
 
 let nombreU = prompt("Ingresa tu nombre")
@@ -59,7 +68,7 @@ const dividir = (a, b) => a / b
 
 
 if (ingresar) {
-    let opciones = prompt("1. Comprar un producto \n2. Consultar precios \n3. Navegar en la pagina")
+    let opciones = prompt("1. Agregar un producto al carrito de compras \n2. Consultar precios \n3. Navegar en la pagina")
     while (opciones != "3") {
         switch (opciones) {
             case "1":
@@ -78,7 +87,9 @@ if (ingresar) {
                                             alert("La tijera te queda en un valor total de: " + totalcuota1 + " por cuota.")
                                             let saldo = parseFloat(prompt("Ingresa tu saldo"))
                                             if (saldo > totalcuota1) {
-                                                alert("Compra realizada con exito.")
+                                                agregarProd(6);
+                                                console.log(carrito);
+                                                alert("La tijera se agrego a tu carrito de compras.")
                                                 break;
                                             }
                                             else {
@@ -90,7 +101,9 @@ if (ingresar) {
                                             alert("La tijera te queda en un valor total de: " + totalcuota2 + " por cuota.")
                                             let saldo2 = parseFloat(prompt("Ingresa tu saldo"))
                                             if (saldo2 > totalcuota2) {
-                                                alert("Compra realizada con exito.")
+                                                agregarProd(6);
+                                                console.log(carrito);
+                                                alert("La tijera se agrego a tu carrito de compras.")
                                                 break;
                                             }
                                             else {
@@ -102,7 +115,9 @@ if (ingresar) {
                                             alert("La tijera te queda en un valor total de: " + totalcuota3 + " por cuota.")
                                             let saldo3 = parseFloat(prompt("Ingresa tu saldo"))
                                             if (saldo3 > totalcuota3) {
-                                                alert("Compra realizada con exito.")
+                                                agregarProd(6);
+                                                console.log(carrito);
+                                                alert("La tijera se agrego a tu carrito de compras.")
                                                 break;
                                             }
                                             else {
@@ -114,7 +129,9 @@ if (ingresar) {
                                 case "2":
                                     let saldo = parseFloat(prompt("Ingresa tu saldo"))
                                     if (saldo > tijera) {
-                                        alert("Compra realizada con exito.")
+                                        agregarProd(6);
+                                                console.log(carrito);
+                                                alert("La tijera se agrego a tu carrito de compras.")
                                         break;
                                     }
                                     else {
@@ -171,7 +188,9 @@ if (ingresar) {
                                 case "2":
                                     let saldo = parseFloat(prompt("Ingresa tu saldo"))
                                     if (saldo > cuchillo) {
-                                        alert("Compra realizada con exito.")
+                                        agregarProd(1);
+                                        console.log(carrito);
+                                        alert("La tijera se agrego a tu carrito de compras.")
                                         break;
                                     }
                                     else {
@@ -249,7 +268,7 @@ if (ingresar) {
                         alert("La tijera tiene un valor de " + tijera)
                         break;
                     case "2":
-                        alert("El cuchillo tiene un valor de " + cuchillo)
+                        alert(mostrarPrecio)
                         break;
                     case "3":
                         alert("La chaira tiene un valor de " + chaira)
@@ -260,9 +279,6 @@ if (ingresar) {
                 
 
         }
-        opciones = prompt("1. Comprar un producto \n2. Consultar precios \n3. Navegar en la pagina")
+        opciones = prompt("1. Agregar un producto al carrito de compras \n2. Consultar precios \n3. Navegar en la pagina")
     }
 }
-
-
- */
