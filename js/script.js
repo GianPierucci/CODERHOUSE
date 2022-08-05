@@ -11,6 +11,9 @@ function login() {
     }
 }
 
+let inputBuscador = document.querySelector("#buscarProd")
+
+
 const stockProds = [
     {id:1, producto: "cuchillo", tipo: "hogar", marca: "mundial", largo: "20cm", precio: 1500 },
     {id:2, producto: "cuchillo", tipo: "cocina", marca: "mundial", largo: "25cm", precio: 2000 },
@@ -29,6 +32,11 @@ const agregarProd = (prodId) => {
 
 const mostrarPrecio = stockProds.map(producto => producto.precio)
 
+inputBuscador.addEventListener("click", () =>{
+    let resultadoBusq = inputBuscador.value;
+    stockProds.filter((producto)=>producto.producto==resultadoBusq)
+});
+
 
 let cuenta = prompt("Deseas crear una cuenta? \n1. Crear una cuenta \n2. Proseguir sin una cuenta (No podras comprar)")
 let ingresar = false;
@@ -39,8 +47,14 @@ alert("Bienvenido " + nombreU + " " + apellidoU)
 let contraseñaU = prompt("Crea una contraseña")
 console.log("tu contraseña es " + contraseñaU);
 
+function contraseñaUs(){
+    let contraseñaUs = prompt("Crea una contraseña")
+    return
+}
+
 switch (cuenta) {
     case "1":
+        
         ingresar = true
         break;
 
@@ -51,7 +65,6 @@ switch (cuenta) {
         alert("Opcion invalida")
         break
 }
-
 
 
 
@@ -282,3 +295,4 @@ if (ingresar) {
         opciones = prompt("1. Agregar un producto al carrito de compras \n2. Consultar precios \n3. Navegar en la pagina")
     }
 }
+
