@@ -1,4 +1,4 @@
-function login() {
+/* function login() {
     let contraGuardada = prompt("Ingresa tu contraseña guardada")
     while (contraGuardada != true) {
         if (contraGuardada == contraseñaU) {
@@ -294,5 +294,5 @@ if (ingresar) {
         }
         opciones = prompt("1. Agregar un producto al carrito de compras \n2. Consultar precios \n3. Navegar en la pagina")
     }
-}
+} */
 

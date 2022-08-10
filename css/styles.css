@@ -477,6 +477,8 @@ nav ul li {
   padding: 15px;
   border: 1px solid rgba(0, 0, 0, 0.4);
   border-radius: 5px; }
+  .caja-prods p {
+    margin-bottom: 10px; }
 
 .img-cuchillo {
   width: 100%;
@@ -484,11 +486,28 @@ nav ul li {
   border-radius: 20px;
   border: 2px solid rgba(128, 128, 128, 0.1); }
 
+.nomb-prod {
+  margin: 5px 0 0 0;
+  font-size: 22px; }
+
+#div-preciocomp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 10px; }
+  #div-preciocomp h5 {
+    margin: 5px 0 5px 5px; }
+
 .info-prods {
   margin-top: 12px; }
 
 .caja-modal-prods {
   padding: 30px; }
+
+.productosEnCarr {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 1px solid; }
 
 .estrellas {
   color: #e9bc0b;
@@ -539,7 +558,7 @@ nav ul li {
       transition: 0.2s; }
       #secc-prods .caja-prods:hover {
         box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2); }
-  .nombre-prod {
+  .nombre-prod-modal {
     font-size: 24px; }
   .valor-prod {
     font-size: 20px; } }

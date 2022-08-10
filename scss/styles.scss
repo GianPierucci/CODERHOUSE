@@ -507,6 +507,9 @@ nav ul li{
     padding: 15px;
     border: $borde-claro;
     border-radius: 5px;
+    & p{
+        margin-bottom: 10px;
+    }
 }
 
 .img-cuchillo {
@@ -516,12 +519,35 @@ nav ul li{
     border: $borde-muyclaro;
 }
 
+.nomb-prod{
+    margin: 5px 0 0 0;
+    font-size: 22px;
+    
+}
+
+#div-preciocomp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 10px;
+    & h5{
+        margin: 5px 0 5px 5px;
+    }
+}
+
+
 .info-prods {
     margin-top: 12px;
 }
 
 .caja-modal-prods {
     padding: 30px;
+}
+
+.productosEnCarr{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 1px solid;
 }
 
 .estrellas{
@@ -603,7 +629,7 @@ nav ul li{
         }
     }
 
-    .nombre-prod {
+    .nombre-prod-modal {
         font-size: 24px;
     }
 
