@@ -58,15 +58,23 @@
             <div class="caja-form">
                 <h2 class="titulo-form">Crea tu cuenta</h2>
                 <form class="formulario" action="" method="get">
-                    <input class="inputs" type="text" name="nombre" placeholder="Nombre Completo" required></form>
+                    <input id="form-nombre" class="inputs" type="text" name="nombre" placeholder="Nombre Completo" required></form>
                 <form class="formulario"  action="">
-                    <input class="inputs" type="email" name="email" placeholder="Correo Electronico" required></form>
+                    <input id="form-email" class="inputs" type="email" name="email" placeholder="Correo Electronico" required></form>
                     
                 <form class="formulario"  action="">
-                    <input class="inputs" type="password" name="contraseña" placeholder="Contraseña" required></form>
+                    <input id="form-pass" class="inputs" type="password" name="contraseña" placeholder="Contraseña" required></form>
                     
+                <div id="div-check">
+                    <input type="checkbox" name="" id="">
+                    <p>Guardar datos</p>
+                </div>
+
                 <form class="formulario-btn" action="">
                     <input class="inputs boton-form" type="submit" value="REGISTRARSE"></form>
+
+                
+                
                    
                 
             </div>
@@ -133,8 +141,7 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
         </script>
         <script src="https://kit.fontawesome.com/3266782ece.js" crossorigin="anonymous"></script>
-        <script src="./js/script.js"></script>
-        <script src="../js/script2.js"></script>
+        <script src="../js/formulario.js"></script>
 
 </body>
 

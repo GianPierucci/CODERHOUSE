@@ -544,10 +544,37 @@ nav ul li{
     padding: 30px;
 }
 
+.flex-botonsalir{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    & button{
+        border: none;
+        background: none;
+        font-size: 35px;
+        transition: all 0.3s;
+        &:hover{
+            color: rgb(211, 18, 18);
+        }
+    }
+}
+
+.tit-carro{
+    margin: 10px 0;
+}
+
 .productosEnCarr{
-    margin: 5px;
-    padding: 10px;
-    border-radius: 1px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    & p{
+        margin: 10px 0;
+    }
+    & .boton-sacar{
+        border: none;
+        background: none;
+        font-size: 25px;
+    }
 }
 
 .estrellas{
@@ -854,6 +881,16 @@ nav ul li{
                 color: white;
             }
         }
+    }
+}
+
+#div-check{
+    display: flex;
+    justify-content: center;
+    & p{
+        margin: 10px 0 10px 10px;
+        font-family: "oswald";
+        font-size: 20px;
     }
 }
 

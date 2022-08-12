@@ -21,6 +21,10 @@
                 <h1>AFILVEN</h1>
                 <h3 class="subtit">Desde 1955</h3>
                 <button type="button" class="fa-solid fa-bars" data-bs-toggle="collapse" data-bs-target="#nav-mobile"></button>
+                <div id="logosHeader">
+                    <button type="button" class="fa-solid fa-user iconos-header"></button>
+                    <button type="button" class="fa-solid fa-cart-shopping iconos-header" data-bs-toggle="modal" data-bs-target="#modal-carrito"></button>
+                </div>
             </div>
         </header>
 
@@ -160,16 +164,21 @@
 
             </section>
             <div class="modal" id="modal-carrito">
-                <div class="modal-dialog">
+                <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
-                        <div class="modal-body" id="div-carrito">asd</div>
+                        <div class="modal-body" id="div-carrito">
+                            <div class="flex-botonsalir">
+                                <h4 class="font tit-carro">CARRITO DE COMPRAS</h4>
+                                <button data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i></button>
+                            </div>
+                            <h5 class="font">Productos seleccionados</h5>
+                        </div>
                     </div>
                 </div>
             </div>
 
         </div>
             
-        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal-carrito" id="abrir-carrito">CARRITO</button>
         <!-- MODAL PRODUCTOS -->
         <div class="modal fade" id="modal-productos" >
             <div class="modal-dialog modal-dialog-centered">
