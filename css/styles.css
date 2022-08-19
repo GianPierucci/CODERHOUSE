@@ -711,23 +711,23 @@ nav ul li {
     font-size: 45px;
     font-weight: 800;
     font-family: "oswald"; }
-  .caja-form .formulario, .caja-form .formulario-btn {
+  .caja-form .formulario, .caja-form #formulario-btn {
     text-align: center;
     padding: 10px 0; }
-    .caja-form .formulario input, .caja-form .formulario-btn input {
+    .caja-form .formulario input, .caja-form #formulario-btn input {
       padding: 10px 7px;
       width: 250px;
       border-radius: 10px;
       border: 1px solid black; }
-  .caja-form .formulario-btn {
+  .caja-form #formulario-btn {
     padding: 30px 0; }
-    .caja-form .formulario-btn input {
+    .caja-form #formulario-btn input {
       width: 200px;
       font-size: 18px;
       font-weight: 600;
       font-family: "oswald";
       transition: all 0.4s; }
-      .caja-form .formulario-btn input:hover {
+      .caja-form #formulario-btn input:hover {
         background-color: #CC2936;
         color: white; }
 
