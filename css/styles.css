@@ -721,13 +721,17 @@ nav ul li {
       border: 1px solid black; }
   .caja-form #formulario-btn {
     padding: 30px 0; }
-    .caja-form #formulario-btn input {
+    .caja-form #formulario-btn button {
       width: 200px;
+      height: 40px;
       font-size: 18px;
       font-weight: 600;
       font-family: "oswald";
+      border-radius: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.4);
+      background-color: white;
       transition: all 0.4s; }
-      .caja-form #formulario-btn input:hover {
+      .caja-form #formulario-btn button:hover {
         background-color: #CC2936;
         color: white; }
 

@@ -16,6 +16,7 @@ const stockProds = [
 ]
 
 
+
 const mostrarProd = (productos) => {
     const divProds = document.getElementById("secc-prods")
     productos.forEach(producto => {
@@ -36,48 +37,102 @@ const mostrarProd = (productos) => {
                         </div>`
         divProds.appendChild(div);
         const boton = document.getElementById(`boton${producto.id}`)
-        boton.addEventListener("click", () =>{
+        boton.addEventListener("click", () => {
             carritoIndex(producto.id)
-            /* alert(`"Se agrego ${producto.producto} al carrito de compras."`) */
-        } )
+            Toastify({
+                text: "El producto se agregó a tu carro de compras",
+                duration: 3000,
+                gravity: "bottom",
+                position: "right",
+                style: {
+                    background: "#dc3545",
+                },
+            }).showToast();
+        })
     })
-
-    
 }
 mostrarProd(stockProds)
 
 
-const carritoIndex = (productoId) =>{
+
+const carritoIndex = (productoId) => {
     const cajaCarrito = document.getElementById("div-carrito");
-    
-    const agregarAlCarr = () =>{
-        let producto = stockProds.find(producto => producto.id === productoId);
+
+    const agregarAlCarr = () => {
+        const producto = stockProds.find(producto => producto.id === productoId);
         carrito.push(producto)
-        let div = document.createElement("div")
+        const div = document.createElement("div")
         div.classList.add("productosEnCarr")
-        div.innerHTML= `<p class="prodsCrt-style">${producto.cantidad}</p>
+        div.innerHTML = `<p class="prodsCrt-style">${producto.cantidad}</p>
                         <p class="prodsCrt-style">${producto.producto}
                             ${producto.tipo}
                             ${producto.marca}</p>
                         <p class="prodsCrt-style">${producto.precio}</p>
-                        <button type="button" onclick="eliminarProdCarr(${producto.id})" class="boton-sacar"><i class="fa-regular fa-trash-can"></i></button>
+                        <button type="button" class="boton-sacar"><i class="fa-regular fa-trash-can"></i></button>
                         `
         cajaCarrito.appendChild(div)
+        div.querySelector(".boton-sacar").addEventListener("click", eliminarProdCarr)
     }
-    agregarAlCarr()
+    agregarAlCarr();
+
+
 }
 
-const eliminarProdCarr = (prodId) =>{
-    const prod = carrito.find(producto => producto.id === prodId)
-    const indice = carrito.indexOf(prod)
-    carrito.splice(indice, 1)
-    carritoIndex();
+function eliminarProdCarr(e) {
+    const btnClicked = e.target;
+
+    Swal.fire({
+        icon: "warning",
+        title: 'Eliminar producto',
+        text: "¿Estas seguro de eliminar el producto?",
+        showCancelButton: true,
+        confirmButtonText: 'Eliminar',
+        cancelButtonText: "Cancelar"
+    }).then((result) => {
+        if (result.isConfirmed) {
+            btnClicked.closest(".productosEnCarr").remove()
+            Toastify({
+                text: "Eliminaste el producto",
+                duration: 2500,
+                gravity: "bottom",
+                position: "right",
+                style: {
+                    background: "#dc3545",
+                },
+            }).showToast();
+        }
+    })
 }
 
-Swal.fire({
-    icon: "info",
-    title:"Bienvenido",
-    text:"Selecciona el producto que desees comprar",
-    confirmButtonText: "Gracias"
-})
-    
+
+
+let usuariosDB = []
+
+function guardarDatosForm(usuarioS, storage) {
+
+    const usuario = {
+        "name": usuarioS.nombre,
+        "user": usuarioS.mail,
+        "pass": usuarioS.contraseña
+    }
+
+    storage.setItem("usuario", JSON.stringify(usuario));
+}
+
+function recuperarDatosUs(storage) {
+    return JSON.parse( storage.getItem("usuario") )
+}
+
+function validarUsuario (usuariosDB, user, pass){
+    let encontrado = usuariosDB.find((usuario)=> user.mail == user)
+
+    if (typeof encontrado === "undefined"){
+        return false;}
+    else{
+        if (encontrado.pass != pass){
+            return false;}
+        else{
+            return encontrado;
+        }
+    }
+}
