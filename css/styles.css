@@ -32,9 +32,28 @@ header {
 .subtit {
   display: none; }
 
+#logosHeader {
+  position: absolute;
+  right: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end; }
+  #logosHeader button {
+    margin: 4px; }
+
+.iconos-header {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 32px;
+  margin: 0; }
+
 @media screen and (min-width: 768px) {
   header h1 {
-    font-size: 45px; } }
+    font-size: 45px; }
+  #logosHeader {
+    right: 70px; } }
 
 @media screen and (min-width: 992px) {
   header h1 {
@@ -49,29 +68,24 @@ header {
     font-weight: 600;
     padding-left: 15px; }
   header .fa-bars {
-    display: none; } }
+    display: none; }
+  #logosHeader {
+    right: 30px;
+    top: 28px; }
+    #logosHeader button {
+      margin: 10px; }
+  .iconos-header {
+    font-size: 45px;
+    margin: 0;
+    transition: all 0.5s; }
+    .iconos-header:hover {
+      font-size: 50px; } }
 
 .fa-bars {
   color: white;
   background: none;
   border: none;
   font-size: 35px; }
-
-#logosHeader {
-  margin: 20px 30px 0 0;
-  padding-right: 14px;
-  position: absolute;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: end; }
-
-.iconos-header {
-  color: white;
-  background: none;
-  border: none;
-  font-size: 45px;
-  margin: 0; }
 
 footer {
   background: #696867;
@@ -501,6 +515,10 @@ nav ul li {
 .info-prods {
   margin-top: 12px; }
 
+.estrellas {
+  color: #e9bc0b;
+  margin-bottom: 8px; }
+
 .caja-modal-prods {
   padding: 30px; }
 
@@ -530,9 +548,12 @@ nav ul li {
     background: none;
     font-size: 25px; }
 
-.estrellas {
-  color: #e9bc0b;
-  margin-bottom: 8px; }
+.divPrecioTotal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px; }
 
 @media screen and (max-width: 992px) {
   #secc-categs {
@@ -778,7 +799,10 @@ nav ul li {
       .flexCont .caja-form .titulo-form {
         font-size: 50px; }
   #info-contacto {
-    margin-bottom: 100px;
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    margin-top: 150px;
+    margin-bottom: 150px;
     background-image: linear-gradient(to top, #949494, #e9e9e9); }
     #info-contacto #f-cont {
       flex-direction: row;

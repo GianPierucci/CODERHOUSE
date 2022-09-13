@@ -1,8 +1,9 @@
 @import 'variables';
 
-@function color($color-name){
+@function color($color-name) {
     @return map-get($colores, $color-name);
 }
+
 /*         HEADER MOBILE          */
 header {
     background: color(rojo-header);
@@ -24,13 +25,16 @@ header {
 .container-hdr {
     width: 98%;
     margin: 0;
-    & button{
+
+    & button {
         margin: 10px;
     }
-    h1{
+
+    h1 {
         padding: 8px 0 5px 15px;
     }
-    h3{
+
+    h3 {
         padding: 5px 0 0 15px;
     }
 }
@@ -46,11 +50,36 @@ header {
     display: none;
 }
 
+#logosHeader {
+    position: absolute;
+    right: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+
+    & button{
+        margin: 4px;
+    }
+}
+
+.iconos-header {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 32px;
+    margin: 0;
+}
+
+
 @media screen and (min-width: 768px) {
     header {
         h1 {
             font-size: 45px;
         }
+    }
+    #logosHeader{
+        right: 70px;
     }
 }
 
@@ -60,21 +89,40 @@ header {
             font-size: 45px;
             padding: 5px 0 0;
         }
-        .flex-header{
+
+        .flex-header {
             flex-direction: column;
-            align-items: flex-start ;
+            align-items: flex-start;
         }
-        .subtit{
+
+        .subtit {
             display: block;
             font-size: 18px;
             font-weight: 600;
             padding-left: 15px;
         }
-        .fa-bars{
+
+        .fa-bars {
             display: none;
         }
     }
 
+    #logosHeader {
+        right: 30px;
+        top: 28px;
+        & button{
+            margin: 10px;
+        }
+    }
+
+    .iconos-header {
+        font-size: 45px;
+        margin: 0;
+        transition: all 0.5s;
+        &:hover{
+            font-size: 50px;
+        }
+    }
 }
 
 .fa-bars {
@@ -82,22 +130,4 @@ header {
     background: none;
     border: none;
     font-size: 35px;
-}
-
-#logosHeader{
-    margin: 20px 30px 0 0;
-    padding-right: 14px;
-    position: absolute;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-}
-
-.iconos-header{
-    color: white;
-    background: none;   
-    border: none;
-    font-size: 45px;
-    margin: 0;
 }
